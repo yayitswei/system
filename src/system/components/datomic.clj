@@ -1,6 +1,6 @@
 (ns system.components.datomic
   (:require [com.stuartsierra.component :as component]
-            [datomic.api :as d]))
+            [datomic.client.api :as d]))
 
 (defrecord Datomic [uri conn]
   component/Lifecycle
